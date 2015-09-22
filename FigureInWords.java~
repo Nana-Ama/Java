@@ -80,7 +80,7 @@ public class FigureInWords {
 	 		if (numEntered.matches("[0-9]+")){
 	 			try{
 	 			   int numberToInteger = Integer.parseInt(numEntered);
-	 			   System.out.println(sayBillion(numberToInteger)); 
+	 			   System.out.println(sayMillion(numberToInteger)); 
 				}
 	 			catch(NumberFormatException e){
 	 				 System.out.println("number not within Integer range"); 
@@ -90,7 +90,7 @@ public class FigureInWords {
 	 			try{
 	 			   numEntered = numEntered.replaceAll("\\-([0-9]+)","$1" );
 	 				int numberToInteger = Integer.parseInt(numEntered);
-	 				System.out.println("negative "+ sayBillion(numberToInteger)); 
+	 				System.out.println("negative "+ sayMillion(numberToInteger)); 
 				}
 				catch(NumberFormatException e){
 	 				 System.out.println("number not within Integer range"); 
